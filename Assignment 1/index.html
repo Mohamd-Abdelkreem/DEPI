@@ -3,109 +3,205 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
+    <title>Multi-Page Website | Home</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Welcome to our multi-page website showcasing proper semantic HTML structure, accessibility features, and professional web development practices." />
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://example.com/" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Multi-Page Website - Home" />
+    <meta property="og:description" content="A professionally structured multi-page website demonstrating semantic HTML5 best practices." />
+    <meta property="og:image" content="https://example.com/images/og-image.jpg" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Multi-Page Website Demo" />
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Multi-Page Website - Home" />
+    <meta name="twitter:description" content="A professionally structured multi-page website demonstrating semantic HTML5 best practices." />
+    <meta name="twitter:image" content="https://example.com/images/twitter-image.jpg" />
   </head>
   <body>
-    <!-- Navbar -->
-    <header>
-      <nav>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with Navigation -->
+    <header role="banner">
+      <div>
+        <h1>Professional Web Solutions</h1>
+        <p>Building Tomorrow's Digital Experiences</p>
+      </div>
+      
+      <!-- Main Navigation -->
+      <nav role="navigation" aria-label="Main Navigation">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <!-- Main Content -->
+    <main id="main-content" role="main">
       <!-- Hero Section -->
-      <section id="hero">
-        <h1>Welcome to Our Amazing Platform</h1>
-        <p>Discover the best solutions for your business needs</p>
-        <button type="button">Get Started</button>
+      <section id="hero" aria-labelledby="hero-heading">
+        <h2 id="hero-heading">Welcome to Our Digital World</h2>
+        <p>We create exceptional web experiences that drive business growth and user engagement through innovative technology solutions.</p>
+        <button type="button">Get Started Today</button>
       </section>
 
       <!-- Services Section -->
-      <section id="services">
-        <h2>Our Services</h2>
+      <section id="services" aria-labelledby="services-heading">
+        <h2 id="services-heading">Our Core Services</h2>
         <div>
           <article>
-            <h3>Web Development</h3>
-            <p>
-              We create responsive and modern websites tailored to your needs.
-            </p>
+            <header>
+              <h3>Web Development</h3>
+            </header>
+            <p>Custom websites and web applications built with modern technologies and best practices for optimal performance and user experience.</p>
+            <footer>
+              <a href="about.html#web-development">Learn More</a>
+            </footer>
           </article>
 
           <article>
-            <h3>Mobile Apps</h3>
-            <p>
-              Native and cross-platform mobile applications for iOS and Android.
-            </p>
+            <header>
+              <h3>Mobile Applications</h3>
+            </header>
+            <p>Native and cross-platform mobile solutions for iOS and Android that deliver seamless user experiences across all devices.</p>
+            <footer>
+              <a href="about.html#mobile-apps">Learn More</a>
+            </footer>
           </article>
 
           <article>
-            <h3>Cloud Solutions</h3>
-            <p>Scalable cloud infrastructure and deployment services.</p>
+            <header>
+              <h3>Cloud Solutions</h3>
+            </header>
+            <p>Scalable cloud infrastructure, deployment services, and digital transformation strategies for modern businesses.</p>
+            <footer>
+              <a href="about.html#cloud-solutions">Learn More</a>
+            </footer>
           </article>
         </div>
       </section>
 
-      <!-- Testimonials Section -->
-      <section id="testimonials">
-        <h2>What Our Clients Say</h2>
+      <!-- Featured Projects Section -->
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Featured Projects</h2>
+        
         <article>
-          <blockquote>
-            <p>
-              "This platform transformed our business completely. Highly
-              recommended!"
-            </p>
-          </blockquote>
-          <cite>— Jane Doe, CEO at TechCorp</cite>
+          <header>
+            <h3>E-Commerce Platform Redesign</h3>
+            <time datetime="2024-12-01">December 2024</time>
+          </header>
+          
+          <figure>
+            <img src="/images/project1-placeholder.jpg" alt="Screenshot of e-commerce platform showing modern design and improved user interface" width="400" height="300" />
+            <figcaption>Complete redesign of major e-commerce platform resulting in 40% increase in conversion rates</figcaption>
+          </figure>
+          
+          <p>We transformed a legacy e-commerce platform into a modern, responsive solution with enhanced user experience and improved performance metrics.</p>
+          
+          <footer>
+            <a href="contact.html">Discuss Your Project</a>
+          </footer>
         </article>
-
+        
         <article>
-          <blockquote>
-            <p>
-              "Professional service and exceptional quality. The team exceeded
-              our expectations."
-            </p>
-          </blockquote>
-          <cite>— Mohamed Abdel Kareem, Marketing Director</cite>
-        </article>
-
-        <article>
-          <blockquote>
-            <p>
-              "Outstanding support and results. We've seen a 200% increase in
-              engagement."
-            </p>
-          </blockquote>
-          <cite>— Mohamed Ahmed , Startup Founder</cite>
+          <header>
+            <h3>Healthcare Management System</h3>
+            <time datetime="2024-11-15">November 2024</time>
+          </header>
+          
+          <figure>
+            <img src="/images/project2-placeholder.jpg" alt="Healthcare management dashboard showing patient data and analytics" width="400" height="300" />
+            <figcaption>HIPAA-compliant healthcare system serving over 10,000 patients</figcaption>
+          </figure>
+          
+          <p>Developed a comprehensive healthcare management system with patient records, appointment scheduling, and real-time analytics.</p>
+          
+          <footer>
+            <a href="contact.html">Discuss Your Project</a>
+          </footer>
         </article>
       </section>
     </main>
 
-    <!-- Footer with Social Icons -->
-    <footer id="contact">
-      <h2>Connect With Us</h2>
-      <nav aria-label="Social Media Links">
+    <!-- Sidebar with Additional Information -->
+    <aside role="complementary" aria-labelledby="sidebar-heading">
+      <h2 id="sidebar-heading">Latest Updates</h2>
+      
+      <section aria-labelledby="news-heading">
+        <h3 id="news-heading">Company News</h3>
+        <article>
+          <header>
+            <h4>New Partnership Announcement</h4>
+            <time datetime="2024-12-18">December 18, 2024</time>
+          </header>
+          <p>We're excited to announce our strategic partnership with leading cloud providers to enhance our service offerings.</p>
+        </article>
+        
+        <article>
+          <header>
+            <h4>Award Recognition</h4>
+            <time datetime="2024-12-10">December 10, 2024</time>
+          </header>
+          <p>Our team has been recognized as "Best Web Development Agency" by the Digital Excellence Awards 2024.</p>
+        </article>
+      </section>
+      
+      <section aria-labelledby="resources-heading">
+        <h3 id="resources-heading">Helpful Resources</h3>
         <ul>
-          <li>
-            <a href="https://facebook.com" aria-label="Facebook">Facebook</a>
-          </li>
-          <li>
-            <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
-          </li>
-          <li>
-            <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
-          </li>
-          <li>
-            <a href="https://linkedin.com" aria-label="LinkedIn">LinkedIn</a>
-          </li>
+          <li><a href="/blog">Development Blog</a></li>
+          <li><a href="/case-studies">Case Studies</a></li>
+          <li><a href="/whitepapers">Technical Whitepapers</a></li>
+          <li><a href="/webinars">Upcoming Webinars</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <section aria-labelledby="footer-contact">
+        <h2 id="footer-contact">Contact Information</h2>
+        <address>
+          <p>123 Tech Street, Digital City, DC 12345</p>
+          <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+          <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+        </address>
+      </section>
+      
+      <nav aria-label="Footer Navigation">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Service</a></li>
         </ul>
       </nav>
-      <p>&copy; 2025 Company Name. All rights reserved.</p>
+      
+      <section aria-labelledby="social-media">
+        <h2 id="social-media">Follow Us</h2>
+        <nav aria-label="Social Media Links">
+          <ul>
+            <li><a href="https://facebook.com/example" aria-label="Follow us on Facebook">Facebook</a></li>
+            <li><a href="https://twitter.com/example" aria-label="Follow us on Twitter">Twitter</a></li>
+            <li><a href="https://linkedin.com/company/example" aria-label="Connect with us on LinkedIn">LinkedIn</a></li>
+            <li><a href="https://github.com/example" aria-label="View our projects on GitHub">GitHub</a></li>
+          </ul>
+        </nav>
+      </section>
+      
+      <p>&copy; 2025 Professional Web Solutions. All rights reserved.</p>
     </footer>
   </body>
 </html>
